@@ -55,11 +55,14 @@ table {
     max-width: 1330px;
     padding: 0 32px;
     margin: 0 auto;
-    width:100% ;
+    max-width:100% ;
+}
+.font-0 {
+    font-size: 0%;
 }
 .sub-container {
     max-width: 1100px;
-    padding: 20px 34px;
+    padding:0% 34px;
     margin:0 auto;
     width: 100%;
 }
@@ -67,13 +70,24 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family:'Lato', sans-serif ;
+    background-color: rgb(230,230,230);
 }
 :root {
     --nav-blue:rgb(27,48,90);
+    --green:rgb(128,196,186);
+    --pink:rgb(188, 110, 149);
 }
 /* flex */
+.text-center {
+    text-align: center;
+}
 .flex {
     display: flex;
+}
+.flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .flex-col {
     display: flex;
@@ -96,6 +110,12 @@ body {
 .align-items-center {  
     align-items: center;
     /* cross axis  , will bring all in a straight line format, all will be at equal level */
+}
+.justify-end {
+    justify-content:flex-end;
+}
+.grow {
+    flex: 1 1 auto;
 }
 .flex-70 {
     flex: 0 1 70%;
@@ -138,8 +158,14 @@ body {
 }
 /* header */
 header {
-    padding: 9px;
-   /* background-color: pink; */
+    background-color: #fff;
+}
+.header {
+    margin:0 180px;
+    padding: 2%;
+}
+.no-margin-top {
+    margin-top: 0%;
 }
 
 /* logo */
@@ -152,12 +178,15 @@ header {
     margin-left: 14px;
 }
 /* nav */
+.nav {
+    margin-left: 21%;
+}
 .nav a {
-   font-size: 17px;
+   font-size: 14px;
    color: black;
    text-transform: capitalize;
    text-decoration: none;
-   margin-right: 34px;
+   margin-right: 30px;
    font-weight: 800;
 }
 .active {
@@ -206,7 +235,7 @@ header {
 /* form */
 form {
     background-color: #fff;
-    width: 80%;
+    width: 60%;
     padding: 3%;
     margin-bottom: 5%;
     margin-top: 8%;
@@ -236,9 +265,9 @@ input {
     width: 100%;
 }
 select {
-    width: 100%;
+    width: 80%;
     border: 0;
-    margin: 10%;
+    margin: 10% 2%;
     text-transform: capitalize;
     font-size: 14px;
     color: rgb(152,158,168);
@@ -253,19 +282,12 @@ button {
     text-transform: uppercase;
     padding: 4%;
     margin-top: 4%;
-
 }
 .checkout-info {
     margin-top: 4%;
 }
-option {
-    width: 30%;
-    padding: 6%;
-}
 .option {
-    width: 30%;
-    padding: 6%;
-
+    padding: 2%;
 }
 
 /* JOURNEY SECTION */
@@ -295,35 +317,74 @@ strong {
     margin-bottom: 3%;
     margin-top: 2%;
 }
-/* county sections*/
-
-/* EUROPE SECTION */
-.europe-sec {
+/* DESTINATION sections*/
+article {
+    background-color: #fff;
+}
+.article-col-left {
     position: relative;
+} 
+.nav-btn-container {
+    position:absolute;
+    top: 50%;
 }
-.europe-sec img {
-    width: 50%;
+.nav-btn-container-left {
+ left: 53px;
+}
+.nav-btn-container-right {
+    right: 60px;
+   }
 
+.destination-sec img {
+   width: 100%;
 }
-.places {
-    width: 40%;
-    height: 50%;
-    /* margin-left: -4%; */
-    position: absolute;
-    padding: 4%;
-    background-color:rgb(128, 196, 186);
-    left: 44%;
+
+.nav-btn {
+    width: 60px;
+    height: 60px;  
+    background-color: rgb(0,0,0,0.6);
+    line-height: 60px;
+    margin-left: 8px;
 }
-.places h2 {
-    font-size: 36px;
-    color: #fff;
-    text-transform: capitalize;
+.nav-btn i {
+    color: #000;
+    font-size: 34px;
+    
 }
-.places p {
-    font-size: 16px;
-    color: #fff;
-    margin-top: 2%;
+.nav-btn-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(245,245,245,0.7);
 }
+/* article-col-right */
+.article-col-right {
+    background-color: rgb(128, 196, 186);
+    padding: 32px;
+    color: rgb(245,245,245);
+    position: relative;
+    z-index: 1;
+}
+.pink {
+    background-color: rgb(188, 110, 149);
+    
+}
+.left {
+    left: -60px;
+}
+.right {
+    right: -60px;
+}
+.right-1 {
+    right: 60px;
+}
+.article-col-right h2 {
+
+        font-size: 36px;
+        text-transform: capitalize ;
+        margin-bottom: 12px;
+    }
+
 .btn-white {
     background-color: #fff;
     width: 35%;
@@ -333,48 +394,37 @@ strong {
     padding: 3%;
 
 }
-/* ASIA SECTION */
-.asia-text {
-    width: 40%;
-    height: 30%;
-    margin-left: 2%;
-    padding: 4%;
-    background-color: rgb(186,110,147);
-    position:absolute ;
-    left: 43px;
-    /* left: 6%; */
-}
-.asia-sec img {
-    width: 50%;
-    position:relative ;
-    left: 50%;
-}
-.try div {
-    margin-left: 8%;
+/* country img gallery */
+/* MAPS SEC */
+.maps .grow{
+    padding: 22px 0;
+    background-color: var(--green);
 
 }
-/* country img gallery */
-.country {
-    background-color: rgba(128,196,186);
-    width: 100%;
-    padding: 1.4%;
+.active-map {
+    background-color: var(--pink);
 }
-.country img {
-    background-color: rgb(128, 196, 186);
-    width: 50%;
+.maps .grow:hover {
+    background-color: var(--pink);
 }
-.country h2 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 800;
-    margin: 3%;
+.maps p {
+    font-size: 16px;
+    color: rgb(245,245,245);
     text-transform: uppercase;
 }
+
+
 /* HOTELS SECTION */
+.hotel-sec {
+    /* margin-top: 66px; */
+    padding-top: 66px;
+    background-color: #fff;
+}
 .hotels {
     box-shadow:  1px 1px 9px 1px  rgb(160, 153, 153);
     margin-bottom: 3%;
     width: 100%;
+    background-color: #fff;
 }
 .hotel-info {
     margin-left: 3%;
@@ -416,37 +466,44 @@ strong {
     background-color: rgb(128, 196, 186);
     width: 30%;
 }
-/* MAPS SEC */
+
 
 /* user info */
-iframe {
-    /* position: relative; */
-}
-.map-section {
+.contact {
     position: relative;
 }
-.user-info {
-    background-color: rgb(245,245,245);
+.overlay {
     position: absolute;
-  
+    left:0;
+    right: 0%;
+    top: 0%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.contact form {
+    width: 32%;
+    position: absolute;
+    bottom: 34px;
+    left: 620px;
     
 }
-.user-info input {
-    background-color: rgb(245,245,245);
-    margin: 2%;
-    width: 100%;
-    
-
+.contact input {
+    background-color:rgb(246, 243, 246) ;
 }
-textarea {
-    background-color: rgb(245,245,245);
-    width: 100%;
-    border: 0;
-    margin: 2%;
+.contact input {
+    margin-right: 8px;
+    width: 90%;
+}
+.contact textarea {
+    width: 95%;
     text-transform: capitalize;
-    font-size: 14px;
-    color: rgb(152,158,168);
-
+    font-size: 15px;
+    margin-top: 12px;
+    font-family:'Lato', sans-serif ;
+    padding-top: 12px;
+    padding-left: 12px;
+    border: 0;
+    background-color:rgb(246, 243, 246) ;
 }
 /* FOOTER */
 footer {
