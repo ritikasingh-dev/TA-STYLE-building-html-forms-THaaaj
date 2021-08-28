@@ -9,289 +9,345 @@
 <script src="https://kit.fontawesome.com/2bef200a9d.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header> 
-    <div class="container sub-container flex space-between align-items-center">
-                <div class="logo flex align-items-center">
-                    <img src="assets/logo.png" alt="logo">
-                    <a href="#">journey</a>
-                </div>
-                <nav class="nav">
-                    <a class="active" href="#">home</a>
-                    <a href="#">top destinations</a>
-                    <a href="#">recommended places</a>
-                    <a href="#">contact us</a>
-                </nav>
-            </div>
+        <header class="container "> 
+            <div class=" sub-container header flex align-items-center">
+                        <div class="logo flex align-items-center">
+                            <img src="assets/logo.png" alt="logo">
+                            <a href="#">journey</a>
+                        </div>
+                        <nav class="nav">
+                            <a class="active" href="#">home</a>
+                            <a href="#">top destinations</a>
+                            <a href="#">recommended places</a>
+                            <a href="#">contact us</a>
+                        </nav>
+                    </div>
         </header>
         <main>
-            <section class="hero-section ">
-                <div class="container sub-container flex-col align-items-center">
-                    <h1>let's begin</h1>
-                    <div>
-                        <img src="assets/dots-3.png" alt="dots">
+            <div class="container">
+                <div class=" sub-container">
+                    <!-- hero -->
+                    <section class="hero-section font-0 no-margin-top">
+                        
+                            <div class=" flex-col align-items-center">
+                                <h1>let's begin</h1>
+                                <div>
+                                    <img src="assets/dots-3.png" alt="dots">
+                                </div>
+                                <h2>We assist you to choose the best</h2>
+                            
+                                <i class="fas fa-chevron-circle-down"></i>
+                               
+                            </div>
+            
+                             <div class=" flex-col align-items-center">
+                                    <form  action="index.html" method="post">
+                                            <fieldset class="flex space-between ">
+                                                <div class="flex-col col-1-2">
+                                                    <div class="flex-col col-1-2 data">
+                                                        <label for="address">choose your destination</label>
+                                                        <input type="adress" name="address" placeholder="type your destination ....">
+                                                    </div>
+                                                    <div class="flex space-between checkout-info">
+                                                        <div class="flex-col col-1-2 data">
+                                                            <label for="date">check-in date</label>
+                                                            <input type="datetime" name="datetime" placeholder="check-in">
+            
+                                                        </div>
+                                                        <div class="flex-col col-1-2 data">
+                                                            <label for="datetime">check-out date</label>
+                                                        <input type="datetime" name="datetime" placeholder="check-out">
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="flex-col col-1-2 space-between" > 
+                                                    <div class="flex space-between">
+                                                        <div class="flex-col data flex-50">
+                                                            <label for="number">how many rooms?</label>
+                                                            <select name="number" id="number">
+                                                                <option class="option" value="1">1 room</option>
+                                                                <option value="2">2 rooms</option>
+                                                                <option value="3">3 rooms</option>
+                                                                <option value="4">4 rooms</option>
+                                                                <option value="5">5 rooms</option>
+                                                                <option value="6">6 rooms</option>
+                                                                <option value="7">7 rooms</option>
+                                                                <option value="8">8 rooms</option>
+                                                                <option value="9">9 rooms</option>
+                                                                <option value="10">10 rooms</option>
+                                                            </select>
+                                                        
+                                                        </div>
+                                                        <div class="flex-col data flex-20">
+                                                            <label for="number">adult</label>
+                                                            <select name="number" id="number">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                      </div>
+                                                       <div class="flex-col data flex-20">
+                                                        <label for="number">children</label>
+                                                        <select name="number" id="number">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                        </select>
+                                                       </div>      
+                                                    </div>                                                                                     
+                                                    <button>check availability</button>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                             </div>
+                        
+                    </section>
+                    <section class="journey-sec">
+    
+                        <div class=" flex-col align-items-center text-center">                    
+                            <h2>your <strong>journey </strong> is our priority</h2>
+                            <h3 class="flex align-items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus ipsam minus quo exercitationem, eaque porro culpa ipsum excepturi quia est. Delectus dolore consequatur temporib</h3>
+                            <button class="btn-explore"> continue explore</button>
+                        </div>
+                    </section>
+                    <!-- article 1-->
+                    <section class="destination-sec">
+                        <article class="flex-center">
+                            <!-- left sec -->
+                            <div class="flex-50 article-col-left">
+                                <div >
+                                    <img src="assets/tm-img-01.jpg" alt="tm1">
+                                </div>
+                                <div class="flex-center justify-end nav-btn-container right-1">
+                                    <div class="nav-btn flex-center ">
+                                        <div class="nav-btn-icon flex-center">
+                                            <i class="fas fa-angle-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="nav-btn flex-center">
+                                        <div class="nav-btn-icon flex-center">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right sec -->
+                            <div class="flex-50 article-col-right left">
+                                <h2>europes most visited places</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusantium magnam praesentium harum et sit exercitationem voluptas. Recusandae repellendus amet illum alias. Beatae iste incidunt ipsa adipisci maxime maiores iure.</p>
+                                <button class="button btn-white ">continue reading</button>
+                            </div>
+                        </article>
+                        <!-- article pink -->
+                        <article class="flex-center">
+                            <!-- right sec -->
+                            <div class=" flex-50 article-col-right pink right ">
+                                <h2>europes most visited places</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusantium magnam praesentium harum et sit exercitationem voluptas. Recusandae repellendus amet illum alias. Beatae iste incidunt ipsa adipisci maxime maiores iure.</p>
+                                <button class="button btn-white ">continue reading</button>
+                            </div>
+                            <!-- left sec -->
+                            <div class="flex-50 article-col-left">
+                                <div >
+                                    <img src="assets/tm-img-02.jpg" alt="tm1">
+                                </div>
+                                <div class="flex-center justify-end nav-btn-container nav-btn-container-left">
+                                    <div class="nav-btn flex-center ">
+                                        <div class="nav-btn-icon flex-center">
+                                            <i class="fas fa-angle-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="nav-btn flex-center">
+                                        <div class="nav-btn-icon flex-center">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </article>
+                        <!-- 3rd sec -->
+                        <article class="flex-center">
+                            <!-- left sec -->
+                            <div class="flex-50 article-col-left">
+                                <div>
+                                    <img src="assets/tm-img-03.jpg" alt="tm1">
+                                </div>
+                                <div class="flex-center justify-end nav-btn-container right-1">
+                                    <div class="nav-btn flex-center ">
+                                        <div class="nav-btn-icon flex-center">
+                                            <i class="fas fa-angle-left"></i>
+                                        </div>
+                                    </div>
+                                    <div class="nav-btn flex-center">
+                                        <div class="nav-btn-icon flex-center">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right sec -->
+                            <div class="flex-50 article-col-right left">
+                                <h2>europes most visited places</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusantium magnam praesentium harum et sit exercitationem voluptas. Recusandae repellendus amet illum alias. Beatae iste incidunt ipsa adipisci maxime maiores iure.</p>
+                                <button class="button btn-white ">continue reading</button>
+                            </div>
+                        </article>
+                            
+                    </section>
+                     <!-- continent sec -->
+                <section class="flex maps font-0">    
+                    <div class="grow text-center ">
+                        <img src="assets/north-america.png" alt="">
+                        <p>north-america</p>
+                        
+                    </div>  
+                    <div class="grow text-center font-0">
+                        <img src="assets/south-america.png" alt="">
+                        <p>south-america</p>
+                      
+    
                     </div>
-                    <h2>We assist you to choose the best</h2>
-                
-                    <i class="fas fa-chevron-circle-down"></i>
+                    <div class="grow text-center font-0 active-map">
+                        <img src="assets/asia.png" alt="">
+                        <p>asia</p>
+                       
+                    </div>
+    
+                    
+                    <div class="grow text-center font-0">
+                        <img src="assets/europe.png" alt="">
+                        <p>europe</p>
                    
-                </div>
-
-                 <div class="container sub-container flex-col align-items-center">
-                        <form  action="index.html" method="post">
-                                <fieldset class="flex space-between ">
-                                    <div class="flex-col col-1-2">
-                                        <div class="flex-col col-1-2 data">
-                                            <label for="address">choose your destination</label>
-                                            <input type="adress" name="address" placeholder="type your destination ....">
-                                        </div>
-                                        <div class="flex space-between checkout-info">
-                                            <div class="flex-col col-1-2 data">
-                                                <label for="date">check-in date</label>
-                                                <input type="datetime" name="datetime" placeholder="check-in">
-
-                                            </div>
-                                            <div class="flex-col col-1-2 data">
-                                                <label for="datetime">check-out date</label>
-                                            <input type="datetime" name="datetime" placeholder="check-out">
-
-                                            </div>
-
-                                           
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="flex-col col-1-2 space-between" > 
-                                        <div class="flex space-between">
-                                            <div class="flex-col data">
-                                                <label for="number">how many rooms?</label>
-                                                <select name="number" id="number">
-                                                    <option class="option" value="1">1 room</option>
-                                                    <option value="2">2 rooms</option>
-                                                    <option value="3">3 rooms</option>
-                                                    <option value="4">4 rooms</option>
-                                                    <option value="5">5 rooms</option>
-                                                    <option value="6">6 rooms</option>
-                                                    <option value="7">7 rooms</option>
-                                                    <option value="8">8 rooms</option>
-                                                    <option value="9">9 rooms</option>
-                                                    <option value="10">10 rooms</option>
-                                                </select>
-                                            
-                                            </div>
-                                            <div class="flex-col data">
-                                                <label for="number">adult</label>
-                                                <select name="number" id="number">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                </select>
-                                          </div>
-                                           <div class="flex-col data ">
-                                            <label for="number">children</label>
-                                            <select name="number" id="number">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                            </select>
-                                           </div> 
-
-                                        </div>                                    
-                                           
-                                        <button>check availability</button>
-                                    </div>
-                                </fieldset>
-                            </form>
-                 </div>
-
-                
-            </section>
-            <section class="journey-sec">
-
-                <div class="container sub-container flex-col align-items-center">                    
-                    <h2>your <strong>journey </strong> is our priority</h2>
-                    <h3 class="flex align-items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus ipsam minus quo exercitationem, eaque porro culpa ipsum excepturi quia est. Delectus dolore consequatur temporib</h3>
-                    <button class="btn-explore"> continue explore</button>
-                </div>
-            </section>
-            <!-- europe section -->
-            <section class="europe-sec flex align-items-center">
-                <img src="assets/tm-img-01.jpg" alt="">
-                <div class="places europe flex-col">
-                    <h2>europes most visited places</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt accusantium, unde, veritatis quam fugit reprehenderit aspernatur eos sapiente consectetur labore? Ipsa facere reiciendis assumenda recusandae officiis sapiente sed</p>
-                    <button class="btn-white">continue reading</button>
-                </div>
-            </section>
-            <!-- asia section -->
-            <section class="asia-sec flex align-items-center">  
-               
-                    <div class="places asia-text flex-col">
-                        <h2>europes most visited places</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt accusantium, unde, veritatis quam fugit reprehenderit aspernatur eos sapiente consectetur labore? Ipsa facere reiciendis assumenda recusandae officiis sapiente sed</p>
-                        <button class="btn-white">continue reading</button>
                     </div>
-                    <img src="assets/tm-img-03.jpg" alt="">
-
-              
-                
-            </section>
-            <!-- 3rd -->
-            <section class="europe-sec flex align-items-center">
-                <img src="assets/tm-img-04.jpg" alt="">
-                <div class="places europe flex-col">
-                    <h2>europes most visited places</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt accusantium, unde, veritatis quam fugit reprehenderit aspernatur eos sapiente consectetur labore? Ipsa facere reiciendis assumenda recusandae officiis sapiente sed</p>
-                    <button class="btn-white">continue reading</button>
-                </div>
-            </section>
-            <!-- continent sec -->
-            <section class=" flex">    
-                <div class="country">
-                    <img src="assets/north-america.png" alt="">
-                    <h2>north-america</h2>
-                </div>  
-                <div class="country">
-                    <img src="assets/south-america.png" alt="">
-                    <h2>north-america</h2>
-
-                </div>
-                <div class="country">
-                    <img src="assets/asia.png" alt="">
-                    <h2>asia</h2>
-                </div>
-
-                </div>
-                <div class="country">
-                    <img src="assets/europe.png" alt="">
-                <h2>europe</h2>
-
-                </div>
-                <div class="country">
-                    <img src="assets/africa.png" alt="">
-                    <h2>africa</h2>
-
-                </div>
-                <div class="country">
-                    <img src="assets/australia.png" alt="">
-                <h2>australia</h2>
-
-                </div>
-                <div class="country">
-                    <img src="assets/antartica.png" alt="">     
-                    <h2>antartica</h2>
-                </div>       
-            </section>
-            <section class="hotel-sec container sub-container">
-                <div class="hotels flex align-items-center ">
-                    <img src="assets/tm-img-04.jpg" alt="">
-                    <div class="hotel-info">
-                        <h2>asia resort hotel-sec</h2>
-                        <h3>myanmar</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
+                    <div class="grow text-center font-0">
+                        <img src="assets/africa.png" alt="">
+                        <p>africa</p>
+                     
                     </div>
+                    <div class="grow text-center font-0">
+                        <img src="assets/australia.png" alt="">
+                        <p>australia</p>
                     
-                    <div class="flex aside align-items-center">
-                         <img src="assets/button-curve.png" alt="">
-                         <div class="cost flex-col align-items-center center">
-                            <h2>$440</h2>
-                            <h3>continue reading</h3>
-                         </div>  
+    
                     </div>
-                </div>
-                <div class="hotels flex align-items-center">
-                    <img src="assets/tm-img-05.jpg" alt="">
-                    <div class="hotel-info">
-                        <h2>asia resort hotel-sec</h2>
-                        <h3>myanmar</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
-                    </div>
-                    
-                    <div class="flex aside align-items-center">
-                         <img src="assets/button-curve.png" alt="">
-                         <div class="cost flex-col align-items-center center">
-                            <h2>$440</h2>
-                            <h3>continue reading</h3>
-                         </div>  
-                    </div>
-                </div>
-                <div class="hotels flex align-items-center">
-                    <img src="assets/tm-img-06.jpg" alt="">
-                    <div class="hotel-info">
-                        <h2>asia resort hotel-sec</h2>
-                        <h3>myanmar</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
-                    </div>
-                    
-                    <div class="flex aside align-items-center">
-                         <img src="assets/button-curve.png" alt="">
-                         <div class="cost flex-col align-items-center center">
-                            <h2>$440</h2>
-                            <h3>continue reading</h3>
-                         </div>  
-                    </div>
-                </div>
-                <div class="hotels flex space-between">
-                    <img src="assets/tm-img-07.jpg" alt="">
-                    <div class="hotel-info">
-                        <h2>asia resort hotel-sec</h2>
-                        <h3>myanmar</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
-                    </div>
-                    
-                    <div class="flex aside align-items-center">
-                         <img src="assets/button-curve.png" alt="">
-                         <div class="cost flex-col m-left"> 
+                    <div class="grow text-center font-0">
+                        <img src="assets/antartica.png" alt="">     
+                        <p>antartica</p>
+                        
+                    </div>       
+                </section>
+                <section class="hotel-sec font-0">
+                    <div class="hotels flex align-items-center ">
+                        <img src="assets/tm-img-04.jpg" alt="">
+                        <div class="hotel-info">
+                            <h2>asia resort hotel-sec</h2>
+                            <h3>myanmar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
+                        </div>
+                        
+                        <div class="flex aside align-items-center">
+                             <img src="assets/button-curve.png" alt="">
+                             <div class="cost flex-col align-items-center center">
                                 <h2>$440</h2>
                                 <h3>continue reading</h3>
-                            
-                         </div>  
+                             </div>  
+                        </div>
                     </div>
-                </div>
-                <div class="flex center">
-                    <button class="btn-explore ">show more places</button>
-
-                </div>
-                
-            </section>
-            <section class="map-section">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.135647588131!2d73.91426941500124!3d18.567922272570225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c141e4cbdb13%3A0xfd181d4bc26527f1!2sThe%20Chocolate%20Room!5e0!3m2!1sen!2sin!4v1629524608389!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">      
-                    <form class="user-info" action="index.html" method="post">
+                    <div class="hotels flex align-items-center">
+                        <img src="assets/tm-img-05.jpg" alt="">
+                        <div class="hotel-info">
+                            <h2>asia resort hotel-sec</h2>
+                            <h3>myanmar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
+                        </div>
+                        
+                        <div class="flex aside align-items-center">
+                             <img src="assets/button-curve.png" alt="">
+                             <div class="cost flex-col align-items-center center">
+                                <h2>$440</h2>
+                                <h3>continue reading</h3>
+                             </div>  
+                        </div>
+                    </div>
+                    <div class="hotels flex align-items-center">
+                        <img src="assets/tm-img-06.jpg" alt="">
+                        <div class="hotel-info">
+                            <h2>asia resort hotel-sec</h2>
+                            <h3>myanmar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
+                        </div>
+                        
+                        <div class="flex aside align-items-center">
+                             <img src="assets/button-curve.png" alt="">
+                             <div class="cost flex-col align-items-center center">
+                                <h2>$440</h2>
+                                <h3>continue reading</h3>
+                             </div>  
+                        </div>
+                    </div>
+                    <div class="hotels flex space-between">
+                        <img src="assets/tm-img-07.jpg" alt="">
+                        <div class="hotel-info">
+                            <h2>asia resort hotel-sec</h2>
+                            <h3>myanmar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt hic laudantium asperiores, modi sint vel mollitia libero similique quisqua Voluptate molestias blanditiis vitae.</p>
+                        </div>
+                        
+                        <div class="flex aside align-items-center">
+                             <img src="assets/button-curve.png" alt="">
+                             <div class="cost flex-col m-left"> 
+                                    <h2>$440</h2>
+                                    <h3>continue reading</h3>
+                                
+                             </div>  
+                        </div>
+                    </div>
+                    <div class="flex center">
+                        <button class="btn-explore ">show more places</button>
+    
+                    </div>
+                    
+                </section>
+                <section class="contact font-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.135647588131!2d73.91426941500124!3d18.567922272570225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c141e4cbdb13%3A0xfd181d4bc26527f1!2sThe%20Chocolate%20Room!5e0!3m2!1sen!2sin!4v1630132216151!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="overlay"></div>
+                    <form action="index.html" method="POST">
                         <fieldset>
-                            <div class="flex user-info">
-                                
-                                <input type="text" name="text" placeholder="name">
-                                
-                                <input type="email" name="email" placeholder="email">
+                            <div class="flex">
+                                <input type="text" id="first-name" placeholder="first name">
+                                <input type="text" id="last-name" placeholder="first name">
                             </div>
-                            <div class="flex user-info">
-                                <input type="text" name="text" placeholder="subject">
+                            <div>
+                                <input type="text" id="subject" placeholder="subject">
                             </div>
-                            <div class="flex user-info">
-                                <textarea name="text" id="text" cols="30" rows="10" placeholder="message"></textarea>
-                            </div>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                            <button class="">send message now</button>
                         </fieldset>
-                    </form>     
-                </iframe>
-                   
-            </section>
-            <footer class="flex center">
-                <div>Copyright @ Your Company 2020.Designed by Template Mo</div>
-            </footer>
-
+                    </form>
+                </section>
+                <footer class="flex center">
+                    <div>Copyright @ Your Company 2020.Designed by Template Mo</div>
+                </footer>
+    
+                </div>
+            </div>
+           
         </main>
+        
     </body>
 </html>
